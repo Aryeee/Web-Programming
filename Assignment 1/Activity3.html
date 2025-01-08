@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Activity 3: Tables and Hyperlinks</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td {
+            border: 1px solid black;
+            text-align: center;
+            vertical-align: middle;
+            height: 100px;
+        }
+        .color1 { background-color: #FFD700; } /* Example color */
+        .color2 { background-color: #87CEEB; } /* Example color */
+        .color3 { background-color: #FF6347; } /* Example color */
+        .color4 { background-color: #98FB98; } /* Example color */
+        .affirmation {
+            font-family: 'Arial', sans-serif;
+            color: #333333;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td rowspan="2">
+                <img src="your-image.jpg" alt="Your Image" style="width: 100%; height: auto;">
+            </td>
+            <td class="color1">r1c3</td>
+            <td colspan="2" class="color2">r1c4</td>
+            <td class="color3">r1c5</td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="color4">r2c3</td>
+            <td rowspan="2" class="affirmation">You are capable of amazing things!</td>
+            <td rowspan="2" class="affirmation">Keep pushing forward!</td>
+        </tr>
+        <tr>
+            <td><a href="home.html">r3c1</a></td>
+            <td class="color1">r3c4</td>
+            <td><a>r3c6</a></td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="affirmation">Believe in yourself!</td>
+            <td class="color3">r4c2</td>
+            <td class="affirmation">You are strong!</td>
+            <td class="color4">r4c5</td>
+            <td rowspan="2"><a href="https://example.com"><img src="image-link.jpg" alt="Image Link" style="width: 100%; height: auto;"></a></td>
+        </tr>
+        <tr>
+            <td>r5c1</td>
+            <td colspan="2" class="affirmation">You are unstoppable!</td>
+        </tr>
+        <tr>
+            <td colspan="2">r6c1</td>
+            <td class="affirmation">Keep smiling!</td>
+            <td colspan="2">r6c5</td>
+        </tr>
+    </table>
+</body>
+</html>
